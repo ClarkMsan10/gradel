@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #23517c;
+}
+
+body {
+  /* background: #000000; */
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  z-index: 30;
+}
+
+header.sticky {
+  background-color: var(--primary);
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav li a {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li:hover a {
+  color: var(--primary);
+}
+
+section {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+section.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+
+section.banner::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+section.banner .slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+section.banner .slider #slideImg {
+  width: 100%;
+  height: 100%;
+  animation: zoom 16s linear infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+section.banner .content {
+  position: relative;
+  transition: 2s;
+  z-index: 20;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* width: 550px; */
+}
+
+section.banner .content .logo {
+  width: 200px;
+  height: 120px;
+}
+
+section.banner .content img {
+  width: 100%;
+  height: 100%;
+}
+
+section.banner .content .button {
+  position: relative;
+}
+
+section.banner .content .button a {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 6px 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 59px;
+}
+
+section.banner .content .button a:nth-child(2) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+section.banner .content .button a:hover:nth-child(1) {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+section.banner .content .button a:hover:nth-child(2) {
+  background: var(--primary);
+}
+
+section.banner .content h2 {
+  font-size: 1.5;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #ffffff;
+  margin: 10px 0 20px;
+  max-width: 800px;
+}
+
+section.banner .content p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #ffffff;
+  margin: 10px 0 20px;
+  max-width: 800px;
+}
+
+section.about-us .title-section {
+  padding-left: 30px;
+  font-size: 50px;
+}
+
+section.about-us .container{
+  width: 100%;
+  height: 100%;
+}
+
+section.about-us .container .content {
+  width: 1243px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* background-color: #23517c43; */
+  /* padding: 0 30px; */
+}
+
+section.about-us .container .content-text {
+  width: 60%;
+  /* height: 400px; */
+  /* background-color: blue; */
+  /* text-align: justify; */
+  padding: 5px 30px;
+}
+
+.content-text p {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.content-text ul {
+  margin-left: 30px;
+}
+
+.content-text p span {
+  font-weight: bold;
+}
+
+.content-text ul li {
+  list-style: inside;
+}
+
+section.about-us .container .content-image {
+  width: calc(40% - 20px);
+  margin-left: 20px;
+  position: relative;
+  z-index: 15;
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goals {
+  width: 100%;
+  background-color: #23517c;
+  padding: 30px 30px;
+  /* padding-bottom: 45px; */
+}
+
+.goals .title-section{
+  color: #fff;
+  margin: 0;
+  /* padding-top: 15px; */
+}
+
+.content-goals {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 30px 0; */
+}
+
+.content-goals .card-goals {
+  position: relative;
+  width: 50%;
+  height: 250px;
+  font-size: 18px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(image/pic-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  cursor: pointer;
+}
+
+.content-goals .card-goals:hover{
+  font-size: 20px; 
+  transition: .8s;
+  z-index: 15;
+}
+
+.content-goals .card-goals::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.671);
+}
+
+.content-goals .card-goals:nth-child(2) {
+  background: url(image/pic-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+}
+
+.content-goals .card-goals:nth-child(3) {
+  background: url(image/pic-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+}
+
+.content-goals .card-goals:nth-child(4) {
+  background: url(image/pic-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+}
+
+.card-goals p {
+  text-align: center;
+  padding: 10px;
+  z-index: 20;
+}
+
+/* .card-goals a{
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card-goals a:hover{
+    background-color: red;
+} */
+section.activities {
+  background-color: aquamarine;
+}
+
+section.activities {
+  background-color: violet;
+}
+
+section.contact {
+  background-color: orange;
+}
