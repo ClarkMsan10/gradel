@@ -216,6 +216,7 @@
   section.about-us .content .title-section {
     font-size: 40px;
     color: #23517c;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 
@@ -430,6 +431,18 @@ section.contact .contact-element{
 
 .contact-element div i{
     margin-right: 10px;
+}
+
+section.show{
+  position: relative;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 2s ease;;
+}
+
+section.show.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media screen and (max-width : 1000px) {
