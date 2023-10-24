@@ -500,6 +500,7 @@ section.show.active{
 .content-goals .card-goals {
   position: relative;
   width: 100%;
+  border: none;
 }
 
 .goals{
