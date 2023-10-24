@@ -60,13 +60,11 @@ window.addEventListener('scroll', reveal);
 
 function reveal(){
   var reveals = document.querySelectorAll('section.show');
-  console.log(reveals.length)
   for (var i = 0; i < reveals.length; i++){
     console.log(reveals[i].classList);
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
     var revealpoint = 75;
-    // reveals[i].classList.add('active')
     
     if(revealtop < windowheight - revealpoint){
     reveals[i].classList.add('active');
