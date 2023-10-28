@@ -445,6 +445,48 @@ section.show.active{
   opacity: 1;
 }
 
+.content-activity{
+  display: flex;
+  max-width: 1400px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.card-activity{
+  width: calc(30% - 25px);
+  margin: 25px;
+}
+
+
+
+
+
+.card-activity h4{
+  text-align: center;
+  font-size: 25px;
+}
+
+.card-activity p{
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.img-activity{
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+}
+
+.img-activity img{
+  width: 100%;
+  height: 100%;
+
+}
+
 @media screen and (max-width : 1000px) {
 
   section.banner .content h2 {
@@ -618,6 +660,21 @@ section.contact .contact-element{
   .banner{
       flex-direction: column;
       justify-content: space-around;
+  }
+
+  .content-activity{
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .card-activity{
+    width: 100%;
+    margin : 25px auto;
+  }
+
+  .card-activity p{
+    width: 100%;
   }
 
 
