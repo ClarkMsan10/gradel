@@ -16,7 +16,7 @@ function slider(){
     }
     slideImg.src = images[i];
     i++;
-    setTimeout('slider()', 16000 );
+    setTimeout('slider()', 4000 );
 }
 
 
@@ -69,8 +69,8 @@ function reveal(){
     if(revealtop < windowheight - revealpoint){
     reveals[i].classList.add('active');
     }
-    else{
-    reveals[i].classList.remove('active');
-    }
+    // else{
+    // reveals[i].classList.remove('active');
+    // }
   }
 }
