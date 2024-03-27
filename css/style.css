@@ -359,10 +359,25 @@ section.partners .content-partners{
     padding: 15px 15px;
 }
 
-.content-partners .img-partners{
+.card-partner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.card-partner h6{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.card-partner .img-partners{
     width: 200px;
-    margin-right: 20px;
-    margin-bottom: 20px;
     height: 150px;
 }
 
@@ -439,13 +454,14 @@ section.show.active{
   max-width: 1400px;
   margin: 30px auto;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .card-activity{
   width: calc(30% - 25px);
   margin: 25px;
+  height: 300px;
 }
 
 
@@ -457,10 +473,16 @@ section.show.active{
   font-size: 25px;
 }
 
+.card-activity:last-child h4{
+  font-size: 20px;
+}
+
 .card-activity p{
   margin-top: 15px;
   text-align: justify;
 }
+
+
 
 .img-activity{
   width: 96px;
@@ -713,6 +735,7 @@ section.contact .contact-element{
   .card-activity{
     width: 100%;
     margin : 25px auto;
+    height: auto;
   }
 
   .card-activity p{
