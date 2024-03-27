@@ -204,6 +204,7 @@
     font-style: normal;
     font-size: 2.3rem;
     text-transform: uppercase;
+    letter-spacing: 5px;
   }
 
 
@@ -353,6 +354,7 @@ section.partners{
     min-height: 100vh;
     width: 100%;
     text-align: center;
+    padding: 0px 30px;
 }
 
 
