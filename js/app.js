@@ -44,6 +44,7 @@ function cancelMenu(){
 
 var lastScrollTop = 0;
 header1 = document.querySelector("header");
+header2 = document.querySelector(".logo");
 window.addEventListener('scroll', function(){
   var scrollTop = this.window.scrollY || this.document.documentElement.scrollTop;
 
@@ -54,6 +55,7 @@ window.addEventListener('scroll', function(){
   }
   lastScrollTop = scrollTop;
   header1.classList.toggle("sticky", window.scrollY > 10 );
+  header2.classList.toggle("top", this.window.scrollY > 10);
 })
 
 window.addEventListener('scroll', reveal);

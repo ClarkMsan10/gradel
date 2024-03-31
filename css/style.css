@@ -40,13 +40,17 @@
     display: none;
   }
   
-  .logo {
-    font-size: 40px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    font-weight: 800;
-    text-decoration: none;
+  a.logo {
+    width: 92px;
+    height: 92px;
   }
+
+  .logo img{
+    width: 100%;
+    height: 100%;
+  }
+
+
   
   .nav {
     display: flex;
@@ -99,7 +103,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.637);
     z-index: 5;
   }
 
@@ -140,7 +144,8 @@
 
 
   section.banner .content .logo {
-    text-transform: uppercase;
+    width: 256px;
+    height: 256px;
   }
   
   section.banner .content img {
@@ -357,23 +362,88 @@ section.realisations{
   background-color: #fff;
 }
 
-.gallery .gallery-item{
-  width: calc(25% - 5px);
-  height: 200px;
+.realisations .content{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;  
+}
+
+.realisation-item-container{
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-content: center;
+  padding: 40px 30px;
+  position: relative;
+  color: #fff;
+}
+
+.realisation-item-container:nth-child(2){
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.realisation-item-container .first-date, .realisation-item-container .first-title{
+  display: none;
+}
+
+.realisation-item-container .real-image{
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: black;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.gallery .gallery-item.agri{
-  margin-bottom: 0;
+.realisation-item-container .real-image img{
+  height: calc(50% - 1px);
+  width: calc(50% - 1px);
+}
+
+.realisation-item-container .real-image img:nth-child(odd){
+  margin-right: 1px;
+}
+
+.realisation-item-container .real-image img:nth-child(3),
+.realisation-item-container .real-image img:nth-child(4){
+  margin-top: 2px;
+}
+
+.realisation-item-container .content-text{
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+
+.realisation-item-container .desc-realisation{
+  line-height: 1.5;
+}
+
+.realisation-item-container:nth-child(2) .content-text{
+  margin-left: 0;
+  color: var(--primary);
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.realisation-item-container  .title-realisation{
+  margin-bottom: 3px;
 }
 
 
 
-.gallery-item img{
-  width: 100%;
-  height: 100%;
+.realisation-item-container .content-text p.date{
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .activities .title-section, .partners .title-section{
@@ -687,10 +757,21 @@ section.contact .contact-element{
 
   header{
       padding: 30px 50px;
+      /* justify-content: right; */
   }
 
   header.bg-nav{
       background: black;
+  }
+
+  header .logo{
+    display: none;
+  }
+
+  header .logo.top{
+    display: block;
+    width: 40px;
+    height: 40px;
   }
 
   .hamburger{
@@ -752,7 +833,7 @@ section.contact .contact-element{
   
   .nav{
       position: absolute;
-      top: 80px;
+      top: 152px;
       left: 0;
       right: 0;
       background: black;
@@ -793,6 +874,65 @@ section.contact .contact-element{
 
 }
 
+@media screen and (max-width : 590px){
+
+  section.realisations{
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+.realisations .content{
+  width: 100%;
+}
+
+  .realisation-item-container, .realisation-item-container:nth-child(2){
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+ 
+
+  .realisation-item-container .real-image{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .realisation-item-container .first-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .realisation-item-container .first-date{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .realisation-item-container .second-title{
+    display: none;
+  }
+
+  .realisation-item-container .content-text, .realisation-item-container:nth-child(2) .content-text{
+    padding: 0 15px;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+    margin: 0;
+  }
+
+  .realisation-item-container .content-text p.date{
+    display: none;
+  }
+
+  .realisation-item-container .desc-realisation{
+    margin: 15px 0;
+  }
+  
+}
 
 @media screen and (max-width : 425px){
 
