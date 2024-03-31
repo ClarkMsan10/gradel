@@ -52,10 +52,11 @@ window.addEventListener('scroll', function(){
     header1.style.top = "-120px";
   }else{
     header1.style.top = "0"
+    // header2.classList.toggle("top");
   }
   lastScrollTop = scrollTop;
   header1.classList.toggle("sticky", window.scrollY > 10 );
-  header2.classList.toggle("top", this.window.scrollY > 10);
+  // header2.classList.toggle("top", this.window.scrollY > 10);
 })
 
 window.addEventListener('scroll', reveal);
