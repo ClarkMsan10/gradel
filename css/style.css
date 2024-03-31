@@ -242,7 +242,7 @@
 
   .about-us .content .content-text{
     width: 540px;
-    text-align: justify;
+    text-align: left;
   }
 
   .content-text p {
@@ -354,15 +354,6 @@ section.realisations{
   background-color: var(--primary);
 }
 
-.realisations .gallery{
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 30px;
-  background-color: #fff;
-}
 
 .realisations .content{
   max-width: 1200px;
@@ -381,7 +372,7 @@ section.realisations{
   color: #fff;
 }
 
-.realisation-item-container:nth-child(2){
+.realisation-item-container:nth-child(even){
   flex-direction: row-reverse;
   margin-right: 10px;
   background-color: #fff;
@@ -400,6 +391,11 @@ section.realisations{
   background-color: black;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.realisation-item-container:nth-child(1) .real-image img{
+  height: 100%;
+  width: 100%;
 }
 
 .realisation-item-container .real-image img{
@@ -429,7 +425,7 @@ section.realisations{
   line-height: 1.5;
 }
 
-.realisation-item-container:nth-child(2) .content-text{
+.realisation-item-container:nth-child(even) .content-text{
   margin-left: 0;
   color: var(--primary);
   margin-right: 10px;
@@ -597,7 +593,7 @@ section.show.active{
 
 .card-activity p{
   margin-top: 15px;
-  text-align: justify;
+  text-align: left;
   /* letter-spacing: 1px; */
 
 }
@@ -906,7 +902,7 @@ section.contact .contact-element{
   width: 100%;
 }
 
-  .realisation-item-container, .realisation-item-container:nth-child(2){
+  .realisation-item-container, .realisation-item-container:nth-child(even){
     flex-direction: column;
     padding: 0;
     width: 100%;
@@ -937,7 +933,7 @@ section.contact .contact-element{
     display: none;
   }
 
-  .realisation-item-container .content-text, .realisation-item-container:nth-child(2) .content-text{
+  .realisation-item-container .content-text, .realisation-item-container:nth-child(even) .content-text{
     padding: 0 15px;
     width: 100%;
     justify-content: center;
