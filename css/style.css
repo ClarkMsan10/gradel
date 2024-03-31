@@ -370,10 +370,6 @@ section.realisation{
 }
 
 
-.gallery .gallery-item:nth-child(4n){
-  /* margin-right: 0; */
-}
-
 
 .gallery-item img{
   width: 100%;
