@@ -289,7 +289,7 @@
     background: var(--primary-overlay);
   }
 
-  .goals .title-section, .realisation .title-section{
+  .goals .title-section, .realisations .title-section{
     position: relative;
     font-size: 40px;
     color: 10px;
@@ -338,16 +338,16 @@
     padding: 10px;
 }
 
-section.activities, section.realisation {
+section.activities, section.realisations {
     width: 100%;
     padding: 60px 30px 30px;
 }
 
-section.realisation{
+section.realisations{
   background-color: var(--primary);
 }
 
-.realisation .gallery{
+.realisations .gallery{
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
