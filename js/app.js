@@ -1,10 +1,10 @@
 var slideImg = document.getElementById("slideImg");
 
 var images = new Array(
-    "image/pic-1.jpg",
-    "image/pic-4.jpg",
-    "image/pic-3.jpg",
-    "image/pic-2.jpg",
+    "image/real/agr-1.jpg",
+    "image/real/elev-1.jpg",
+    "image/real/form-3.jpg",
+    "image/real/agr-2.jpg",
 )
 
 var len = images.length;
