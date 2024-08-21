@@ -35,7 +35,6 @@
   
   header.sticky {
     background-color: black;
-    
   }
   
   .hamburger {
@@ -93,7 +92,7 @@
     background-size: cover;
     background-position: center;
     transition: 0.5s;
-    min-height: 100vh;
+    height: 100vh;
   }
   
   section.banner::before {
@@ -142,6 +141,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
+    margin: 60px 0px;
   }
 
 
@@ -231,6 +231,11 @@
     justify-content: space-between;
     align-content: center;
     padding: 40px 30px;
+  }
+
+
+  .title-section{
+    text-transform: uppercase;
   }
 
   section.about-us .content .title-section {
@@ -565,16 +570,21 @@ section.show.active{
 .content-activity{
   display: flex;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 60px 0px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .card-activity{
-  width: calc(30% - 25px);
+  width: calc(40% - 15px);
   margin: 25px;
-  height: 300px;
+  height: 210px;
+}
+
+
+.card-activity:nth-child(5), .card-activity:nth-child(6){
+  height: 550px;
 }
 
 
@@ -582,7 +592,7 @@ section.show.active{
 
 
 .card-activity h4{
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   color: var(--primary);
 }
@@ -593,11 +603,14 @@ section.show.active{
 
 .card-activity p{
   margin-top: 15px;
-  text-align: left;
+  text-align: justify;
   /* letter-spacing: 1px; */
 
 }
 
+ul.list-details li{
+  margin-left: 30px;
+}
 
 
 .img-activity{
@@ -612,6 +625,9 @@ section.show.active{
 
 }
 
+.section.contact{
+  margin-bottom: 0;
+}
 
 .contact .logo{
   width: 128px;
@@ -687,7 +703,7 @@ section.show.active{
   }
 
   section.about-us .content .title-section {
-    font-size: 38px;
+    font-size: 35px;
     color: #23517c;
     margin-bottom: 30px;
     text-align: center;
@@ -765,8 +781,9 @@ section.contact .contact-element{
 @media screen and (max-width : 900px) {
 
   header{
-      padding: 30px 50px;
+      padding: 15px 5px;
       /* justify-content: right; */
+
   }
 
   header.bg-nav{
@@ -780,9 +797,17 @@ section.contact .contact-element{
     height: 40px;
   }
 
+  section.banner{
+    margin-top: 0;
+  }
+
   section.banner .content .logo {
     width: 128px;
     height: 128px;
+  }
+
+  section{
+    margin-top: 30px;
   }
 
   .hamburger{
@@ -844,7 +869,7 @@ section.contact .contact-element{
   
   .nav{
       position: absolute;
-      top: 110px;
+      top: 75px;
       left: 0;
       right: 0;
       background: black;
@@ -852,6 +877,7 @@ section.contact .contact-element{
       margin : 0 auto 0 auto;
       text-align: center;
       font-size: 25px;
+      height: 100vh;
   }
 
 
@@ -872,7 +898,7 @@ section.contact .contact-element{
     margin: 30px auto;
   }
 
-  .card-activity{
+  .content-activity .card-activity{
     width: 100%;
     margin : 25px auto;
     height: auto;
