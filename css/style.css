@@ -378,7 +378,7 @@ section.realisations{
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  /* margin: 0 auto 30px;   */
+  margin: 0 auto 30px;  
 }
 
 .realisation-item-container{
@@ -531,10 +531,12 @@ section.contact .title-section{
     font-size: 40px;
     margin-bottom: 30px;
     margin-top: 20px;
+    text-align: center;
 }
 
 section.contact .content{
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -635,7 +637,7 @@ section.show.active{
 
 .card-activity p{
   margin-top: 15px;
-  text-align: justify;
+  text-align: left;
   font-size: 1.05rem;
   /* letter-spacing: 1px; */
 
@@ -649,7 +651,7 @@ ul.list-details li{
 .img-activity{
   width: 96px;
   height: 96px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .img-activity img{
@@ -665,6 +667,7 @@ ul.list-details li{
 .contact .logo{
   width: 128px;
   height: 128px;
+  margin: 0 auto;
 }
 
 .contact img{
@@ -937,7 +940,6 @@ section.contact .contact-element{
       font-size: 25px;
       height: 100vh;
       transition: .5s all;
-
   }
 
   .nav li{
