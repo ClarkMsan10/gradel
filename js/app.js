@@ -28,11 +28,13 @@ function slider(){
  
 hamburger = document.querySelector(".hamburger");
 navBar = document.querySelector('.nav');
+body =  document.querySelector("body");
 hamburger.onclick = function(){
         navBar.classList.toggle("active");
         var h = document.querySelector("header");
         h.classList.toggle('bg-nav');
         hamburger.classList.toggle("active");
+        body.classList.toggle('show-menu');
 }
 
 function cancelMenu(){
@@ -40,6 +42,7 @@ function cancelMenu(){
     navBar.classList.remove("active");
     var h = document.querySelector("header");
     h.classList.remove('bg-nav');
+    body.classList.remove('show-menu')
 }
 
 var lastScrollTop = 0;
@@ -64,7 +67,6 @@ window.addEventListener('scroll', reveal);
 function reveal(){
   var reveals = document.querySelectorAll('section.show');
   for (var i = 0; i < reveals.length; i++){
-    console.log(reveals[i].classList);
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
     var revealpoint = 75;
