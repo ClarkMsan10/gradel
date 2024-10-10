@@ -65,7 +65,7 @@ window.addEventListener('scroll', function(){
 window.addEventListener('scroll', reveal);
 
 function reveal(){
-  var reveals = document.querySelectorAll('section.show');
+  var reveals = document.querySelectorAll('.show');
   for (var i = 0; i < reveals.length; i++){
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;

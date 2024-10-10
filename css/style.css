@@ -17,6 +17,7 @@
     font-family: 'Lato', sans-serif;
   }
 
+
   /********************HEADER************************/
 
   header {
@@ -24,7 +25,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 30;
+    z-index: 1500;
   }
 
 
@@ -247,6 +248,7 @@
 
   .title-section{
     text-transform: uppercase;
+    padding-top: 30px;
   }
 
   section.about-us .content .title-section {
@@ -315,6 +317,14 @@
     background: var(--primary-overlay);
   }
 
+  .competences .title-section{
+    position: relative;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    z-index: 15;
+  }
+
   .goals .title-section, .realisations .title-section{
     position: relative;
     font-size: 40px;
@@ -366,11 +376,13 @@
 
 section.activities, section.realisations {
     width: 100%;
-    padding: 60px 30px 30px;
+    min-height: 100vh;
 }
+
 
 section.realisations{
   background-color: var(--primary);
+  padding: 60px 30px 30px;
 }
 
 
@@ -470,7 +482,99 @@ section.realisations{
     text-align: center;
 }
 
+.competences{
+  /* background: url('/image/IMG-20240330-WA0030.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%; */
+  position: relative;
+}
 
+.competences .title-section{
+  padding: 30px;
+  color: #fff;
+}
+
+.competences::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.637);
+  z-index: 5;
+}
+
+.parallax-inner{
+  /* padding: 10% 0; */
+  z-index: 56;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  
+}
+
+.parralax-1{
+  background: url(/image/real/agr-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  /* max-width: 1200px; */
+}
+
+
+
+/* .parallax-inner{
+  padding: 10px 0;
+  
+} */
+
+.parallax-inner .content-competences{
+  
+  background-color: white;
+}
+
+.list-competences{
+  
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 60px;
+
+}
+
+.list-competences ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.list-competences ul li{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  padding: 30px;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.parallax-inner p{
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 30px 30px;
+  text-align: center;
+}
 
 section.partners{
     min-height: 80vh;
@@ -591,6 +695,8 @@ section.show.active{
   justify-content: center;
   align-items: center; */
   flex-direction: column;
+  padding: 5px 30px 30px;
+
 }
 
 .content-activity .row{
@@ -607,6 +713,7 @@ section.show.active{
 .card-activity{
   width: calc(50% - 20px);
   height: 240px;
+  margin-bottom: 10px;
 }
 
 
@@ -620,7 +727,6 @@ section.show.active{
   margin-top: 25px;
   height: 575px;
 } */
-
 
 
 
@@ -860,7 +966,7 @@ section.contact .contact-element{
     display: block;
     width: 40px;
     height: 40px;
-    z-index: 1000;
+    z-index: 1500;
   }
 
   section.banner{
@@ -872,8 +978,8 @@ section.contact .contact-element{
     height: 128px;
   }
 
-  section{
-    margin-top: 30px;
+  section .title-section{
+    padding-top: 30px;
   }
 
   .hamburger{
