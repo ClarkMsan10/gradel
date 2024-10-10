@@ -565,7 +565,6 @@ section.realisations{
   border: 1px solid white;
   border-radius: 3px;
   margin: 10px;
-  width: 30%;
   text-align: center;
 }
 
@@ -1107,6 +1106,7 @@ section.contact .contact-element{
 }
 
 @media screen and (max-width : 590px){
+
 
   section.realisations{
     padding-right: 0;
