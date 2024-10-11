@@ -296,7 +296,7 @@
 
   .goals{
     width: 100%;
-    background: url(image/pic-2.jpg);
+    background: url('/image/pic-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -520,7 +520,7 @@ section.realisations{
 }
 
 .parralax-1{
-  background: url(/image/real/agr-3.jpg) no-repeat;
+  background: url('/image/real/agr-3.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
