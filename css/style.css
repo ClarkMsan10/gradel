@@ -774,6 +774,23 @@ ul.list-details li{
   height: 100%;
 }
 
+footer{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+}
+
+footer img{
+  height: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
 @media screen and (max-width : 1300px) {
 
   
